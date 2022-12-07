@@ -101,11 +101,15 @@ Also developed the [CRM for the salon](https://github.com/NataliaVozhdaeva/Beaut
 
 **Pet-project** [Landing for Design Studio](https://nataliavozhdaeva.github.io/Design-Studio/)
 
-- free figma layuot, just with desctop version.  
-  Realized:
+Free figma layuot, just with desctop version. Realized:
 
-* desctop, adaptive and fluid layout. Used flex, grid, position.
-* Scroll animation;
-* neverending slider (feedback);
-* usual slider (examples);
-* burger-menu for small screens.
+- desctop, adaptive and fluid layout. Used flex, grid, position.
+- Scroll animation;
+- neverending slider (feedback);
+- usual slider (examples);
+- burger-menu for small screens.
+
+### ABOUT ME
+
+Have a degree in journalism. Began to be interested in programming at school, but at that time we had programming lessons just in a graduate year, and that wasn’t enough to enter university. Studied myself and in 2020 understood that need a system education, and started courses.  
+I take part in the game "What? Where? When?" (something like “Jeopardy”, but with the team), sort garbage, inspired by pixel-perfect which match from the first time, like knitting and cats.

@@ -1,11 +1,11 @@
 ## NATALIA VOZHDAEVA
 
-- Telegram @Natalia091827
+**Telegram:** @Natalia091827  
+**e-mail:** NataliaVVozhdaeva@gmail.com
 
-- HTML, CSS, and Javascript developer with experience in OOP including Single Page Application using the MVP. Have been
-  developing since 2020. Can make layout adaptive and cross-browser. Have a bit of experience with React and Angular, and continue
-  my learning.  
-  A quick learner. Have high attention to details and accuracy of work. Adaptable, driven, and responsible.
+HTML, CSS, and Javascript developer with experience in OOP including Single Page Application using the MVP. Have been
+developing since 2020. Can make layout adaptive and cross-browser. Have a bit of experience with React and Angular, and continue my learning.  
+A quick learner. Have high attention to details and accuracy of work. Adaptable, driven, and responsible.
 
 ### SKILLS
 
@@ -24,7 +24,7 @@
 - Italian (A1);
 - Russian (Native).
 
-#### CODE EXAMPLE
+### CODE EXAMPLE
 
 ###### Task: adapt kebab- & snake_case to camelCase.
 
@@ -63,7 +63,7 @@ function toCamelCase(str){
 
 ### EXPERIENCE IN DEVELOPMENT (education)
 
-###### HTML-academy
+#### HTML-academy
 
 \*OOP, architecture patterns, class components, working with someone else's code.  
 I developed [SPA](https://github.com/NataliaVozhdaeva/Cinemaddict). Realized:
@@ -75,7 +75,7 @@ I developed [SPA](https://github.com/NataliaVozhdaeva/Cinemaddict). Realized:
 - filter, sort, and user's rating;
 - fixing the academy's code.
 
-###### Rubius Academy
+#### Rubius Academy
 
 \*Gulp, webpack, React, CRUD operations. Async server's work (fetch).  
 I created a [landing](https://determined-swanson-a44406.netlify.app/) for a Beauty salon (HTML, SCSS, JS, bootstrap). Realized:
@@ -90,7 +90,7 @@ Also developed the [CRM for the salon](https://github.com/NataliaVozhdaeva/Beaut
 - choosing a service, date, and master;
 - form for adding, deleting, and updating orders.
 
-###### Tomsk State University of Control Systems and Radioelectronics
+#### Tomsk State University of Control Systems and Radioelectronics
 
 \*HTML5 and CSS3, javaScript, jQuery;
 

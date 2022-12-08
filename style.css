@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  color: hsl(270deg, 90%, 50%);
+}
+
+.link:visited {
+  color: currentColor;
+}
+
+.link:focus {
+  font-weight: bold;
+}
+
+.link:hover {
+  color: hsl(270deg, 90%, 20%);
+}

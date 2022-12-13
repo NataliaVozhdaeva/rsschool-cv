@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="style.css" >
   </head>
   <body>
-    <aside class="aside">
+    <aside class="aside ">
+      <img class="aside-photo img" src="./img/1.png" alt="It's me" title="Hi!">
       <div class="contacts">
         Telegram: @Natalia091827 e-mail: NataliaVVozhdaeva@gmail.com
       </div>
+      <button class="btn aside-btn aside-btn__downloadcv">Download CV in .pdf</button>
     </aside>
     <h2 class="skills-title">Skills</h2>
     <ul class="skills">
@@ -41,7 +43,69 @@
         responsible.
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <h1 class="main-header">Natalia Vozhdaeva</h1>
+      <h2 class="main-subheader">Frontend Developer / HTML-coder</h2>
+      <section class="experience">
+        <h3 class="section-title experience-title">My experience</h3>
+        <ul class="list experience-list">
+          <li class="experience-item">
+            <h4 class="item-title">RSScool </h4>
+          </li>
+          <li class="experience-item">
+            <h4 class="item-title">Pet-projects</h4>
+            <h5 class="pet-title">[Landing for Design Studio](https://nataliavozhdaeva.github.io/Design-Studio/)</h5>
+            <p class="item-text experience-text">Free figma layout, just with desctop version. Realized:</p>
+            <ul class="features">
+              <li class="features-item">desctop, adaptive and fluid layout. Used flex, grid, position.</li>
+              <li class="features-item">scroll animation;</li>
+              <li class="features-item">neverending slider (feedback);</li>
+              <li class="features-item">usual slider (examples);</li>
+              <li class="features-item">burger-menu for small screens.</li>
+            </ul>
+           </li>
+          <li class="experience-item">
+            <h4 class="item-title">HTML-academy 12.2022 - right now</h4>
+            <p class="item-text experience-text">OOP, architecture patterns, class components, working with someone else's code.  
+            I developed [SPA](https://github.com/NataliaVozhdaeva/Cinemaddict). Realized:</p>
+            <ul class="features">
+              <li class="features-item">REST API;</li>
+              <li class="features-item">progressive loading;</li>
+              <li class="features-item">"shake effect" for interactive components when the server doesn't respond;</li>
+              <li class="features-item">adding and deleting comments;</li>
+              <li class="features-item">filter, sort, and user's rating;</li>
+              <li class="features-item">fixing the academy's code.</li>
+            </ul>
+           </li>
+          <li class="experience-item">
+            <h4 class="item-title">Rubius Academy 02.2021 - 04.2021</h4>
+            <p class="item-text experience-text">Gulp, webpack, React, CRUD operations. Async server's work (fetch).  
+              I created a [landing](https://determined-swanson-a44406.netlify.app/) for a Beauty salon (HTML, SCSS, JS, bootstrap). Realized:</p>
+            <ul class="features">
+              <li class="features-item">service's tabs switching (plugin, JS);</li>
+              <li class="features-item">modal window for order</li>
+              <li class="features-item">photo's carousel (@fancybox, JS)</li>
+            </ul>
+            <p class="item-text experience-text">Also I developed the [CRM for the salon](https://github.com/NataliaVozhdaeva/BeautyWorld/tree/crm1) with React. Realized:</p>
+            <ul class="features">
+              <li class="features-item">interaction with the server, CRUD-operations;</li>
+              <li class="features-item">choosing a service, date, and master;</li>
+              <li class="features-item">form for adding, deleting, and updating orders.</li>
+            </ul>
+          </li>
+          <li class="experience-item">
+            <h4 class="item-title">Tomsk State University of Control Systems and Radioelectronics 01.2020 - 04.2020</h4>
+            <p class="item-text experience-text">HTML5 and CSS3, javaScript, jQuery. Realized:</p>
+            <ul class="features">
+              <li class="features-item">implementation of complex visual effects: parallax, animations;</li>
+              <li class="features-item">getting experience in Canvas;</li>
+              <li class="features-item">creating by myself a landing for a store, using flexbox, transform, and javaScript.</li>
+            </ul>
+           </li>
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>

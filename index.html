@@ -9,31 +9,26 @@
     <link rel="stylesheet" href="style.css" >
   </head>
   <body>
-    <aside class="aside ">
-      <img class="aside-photo img" src="./img/1.png" alt="It's me" title="Hi!">
-      <div class="contacts">
-        Telegram: @Natalia091827 e-mail: NataliaVVozhdaeva@gmail.com
-      </div>
-      <button class="btn aside-btn aside-btn__downloadcv">Download CV in .pdf</button>
-    </aside>
-    <h2 class="skills-title">Skills</h2>
-    <ul class="skills">
-      <li class="skills-item">HTML, CSS (Flex, Grid)</li>
-      <li class="skills-item">Javascript</li>
-      <li class="skills-item">SCSS, PUG;</li>
-      <li class="skills-item">Gulp, webpack</li>
-      <li class="skills-item">GIT</li>
-      <li class="skills-item">BEM</li>
-      <li class="skills-item">OOP</li>
-      <li class="skills-item">Figma, Photoshop</li>
-    </ul>
-    <h4 class="languages-title">Languages:</h4>
-    <ul class="languages">
-      <li class="languages-item">English (B1, in progress)</li>
-      <li class="languages-item">Italian (A1)</li>
-      <li class="languages-item">Russian (Native)</li>
-    </ul>
     <header class="header">
+      <nav class="navigation">
+        <ul class="list navigation-list">
+          <li class="navigation-item">About me</li>
+          <li class="navigation-item">Skills</li>
+          <li class="navigation-item">Projects</li>
+          <li class="navigation-item">Education</li>
+        </ul>
+        <button class="btn language-btn">RU</button>
+      </nav>
+      <img class="aside-photo img" src="./assets/img/1.png" alt="It's me" title="Hi!" width="300">
+      <h1 class="main-header">Hi, I'm Natalia!</h1>
+      <h2 class="main-subheader">Frontend Developer / HTML-coder</h2>
+      <section class="contacts">
+        <ul class="list contact-list">
+          <li class="contact-item"><a class="link contact-link header-link"  href="https://www.linkedin.com/in/nataliavozhdaeva/"></a></li>
+          <li class="contact-item"><a class="link contact-link header-link"  href="https://github.com/NataliaVozhdaeva/"></a></li>
+          <li class="contact-item"><a class="link contact-link header-link"  href="mailto:NataliaVVozhdaeva@gmail.com"></a></li>
+        </ul>
+      </section>
       <div class="header-text summary">
         HTML, CSS, and Javascript developer with experience in OOP including
         Single Page Application using the MVP. Have been developing since 2020.
@@ -44,18 +39,49 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="main-header">Natalia Vozhdaeva</h1>
-      <h2 class="main-subheader">Frontend Developer / HTML-coder</h2>
+
+      <section class="skills">
+        <h2 class="skills-title">Skills</h2>
+        <ul class="skills">
+          <li class="skills-item">HTML, CSS (Flex, Grid)</li>
+          <li class="skills-item">Javascript</li>
+          <li class="skills-item">SCSS, PUG;</li>
+          <li class="skills-item">Gulp, webpack</li>
+          <li class="skills-item">GIT</li>
+          <li class="skills-item">BEM</li>
+          <li class="skills-item">OOP</li>
+          <li class="skills-item">Figma, Photoshop</li>
+        </ul>
+        <h4 class="languages-title">Languages:</h4>
+        <ul class="languages">
+          <li class="languages-item">English (B1, in progress)</li>
+          <li class="languages-item">Italian (A1)</li>
+          <li class="languages-item">Russian (Native)</li>
+        </ul>
+      </section>
+
+      <section class="about">
+        Have a degree in journalism. Began to be interested in programming at school, but at that time we had programming 
+        lessons just in a graduate year, and that wasn't enough to enter university. Studied myself and in 2020 understood 
+        that need a system education, and started courses.
+        Take part in the game "What? Where? When?" (something like “Jeopardy”, but with the team), sort the garbage, 
+        inspired by pixel-perfect, which match from the first time, like knitting and cats.
+      </section>
+
       <section class="experience">
         <h3 class="section-title experience-title">My experience</h3>
         <ul class="list experience-list">
           <li class="experience-item">
-            <h4 class="item-title">RSScool </h4>
-          </li>
-          <li class="experience-item">
             <h4 class="item-title">Pet-projects</h4>
-            <h5 class="pet-title">[Landing for Design Studio](https://nataliavozhdaeva.github.io/Design-Studio/)</h5>
-            <p class="item-text experience-text">Free figma layout, just with desctop version. Realized:</p>
+            <figure>
+              <img src="./img/design.png" alt="landing for Design Studio" width="400" >
+              <figcaption>
+                <p class="item-text experience-text">Free figma layout, just with desctop version. </p>
+              </figcaption>
+             </figure>
+             <h4 class="pet-title"> <a class="link pet-link" href="https://nataliavozhdaeva.github.io/Design-Studio"  target="_blank">
+              Landing for Design Studio </a>
+              </h4>
             <ul class="features">
               <li class="features-item">desctop, adaptive and fluid layout. Used flex, grid, position.</li>
               <li class="features-item">scroll animation;</li>
@@ -65,9 +91,8 @@
             </ul>
            </li>
           <li class="experience-item">
-            <h4 class="item-title">HTML-academy 12.2022 - right now</h4>
-            <p class="item-text experience-text">OOP, architecture patterns, class components, working with someone else's code.  
-            I developed [SPA](https://github.com/NataliaVozhdaeva/Cinemaddict). Realized:</p>
+            
+            (https://github.com/NataliaVozhdaeva/Cinemaddict)
             <ul class="features">
               <li class="features-item">REST API;</li>
               <li class="features-item">progressive loading;</li>
@@ -78,9 +103,7 @@
             </ul>
            </li>
           <li class="experience-item">
-            <h4 class="item-title">Rubius Academy 02.2021 - 04.2021</h4>
-            <p class="item-text experience-text">Gulp, webpack, React, CRUD operations. Async server's work (fetch).  
-              I created a [landing](https://determined-swanson-a44406.netlify.app/) for a Beauty salon (HTML, SCSS, JS, bootstrap). Realized:</p>
+            I created a [landing](https://determined-swanson-a44406.netlify.app/) for a Beauty salon (HTML, SCSS, JS, bootstrap). Realized:</p>
             <ul class="features">
               <li class="features-item">service's tabs switching (plugin, JS);</li>
               <li class="features-item">modal window for order</li>
@@ -93,19 +116,53 @@
               <li class="features-item">form for adding, deleting, and updating orders.</li>
             </ul>
           </li>
-          <li class="experience-item">
-            <h4 class="item-title">Tomsk State University of Control Systems and Radioelectronics 01.2020 - 04.2020</h4>
-            <p class="item-text experience-text">HTML5 and CSS3, javaScript, jQuery. Realized:</p>
-            <ul class="features">
-              <li class="features-item">implementation of complex visual effects: parallax, animations;</li>
-              <li class="features-item">getting experience in Canvas;</li>
-              <li class="features-item">creating by myself a landing for a store, using flexbox, transform, and javaScript.</li>
-            </ul>
-           </li>
-          </li>
         </ul>
       </section>
+
+      <section class="education">
+        <h3 class="section-title education-title">Education</h3>
+        <ul class="list education-list">
+          <li class="education-item"><h4 class="item-title">RSScool 12.2022 - right now</h4></li>
+          <li class="education-item">
+            <h4 class="item-title">HTML-academy 04.2022-06.2022</h4>
+            <p class="item-text education-text">
+              OOP, architecture patterns, class components, working with someone else's code.
+            </p>
+          </li>
+          <li class="education-item"><h4 class="item-title">Rubius Academy 02.2021 - 04.2021</h4>
+            <p class="item-text education-text">
+              Gulp, webpack, React, CRUD operations. Async server's work (fetch).
+            </p>
+          </li>
+          <li class="education-item">
+            <h4 class="item-title">Tomsk State University of Control Systems and Radioelectronics 01.2020 - 04.2020</h4>
+            <p class="item-text education-text">
+              HTML5 and CSS3, javaScript, jQuery, Canvas. Implementation of complex visual effects: parallax, animations;
+            </p>
+          </li>
+          <li class="education-item"></li>
+        </ul>
+      </section>
+
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+      <a class="link footer-link" href="https://rs.school/js/">
+        <img class="logo footer-logo" src="./assets/img/logo_rs_school.svg" alt="logo RSScool" width="200">
+      </a>
+      <div class="btn-wrapper">
+        <button class="btn footer-btn downloadcv">Download CV in .pdf</button>
+        <a 
+          class="link btn footer-btn github" 
+          href="https://github.com/NataliaVozhdaeva" 
+          target="_blank">Look at GitHub
+        </a>
+        <a 
+          class="link btn footer-btn email" 
+          href="mailto:NataliaVVozhdaeva@gmail.com" 
+          target="_blank">Mail me!
+        </a>
+    </div>
+    </footer>
   </body>
 </html>

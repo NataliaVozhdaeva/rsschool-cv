@@ -1,3 +1,20 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Serif', serif;
+}
+
+.non-display {
+  display: none;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -13,4 +30,9 @@
 
 .link:hover {
   color: hsl(270deg, 90%, 20%);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
 }

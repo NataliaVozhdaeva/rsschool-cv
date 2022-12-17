@@ -1,168 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Natalia Vozhdaeva</title>
 
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/img/fav-icon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <nav class="navigation">
-        <ul class="list navigation-list">
-          <li class="navigation-item">About me</li>
-          <li class="navigation-item">Skills</li>
-          <li class="navigation-item">Projects</li>
-          <li class="navigation-item">Education</li>
-        </ul>
-        <button class="btn language-btn">RU</button>
-      </nav>
-      <img class="aside-photo img" src="./assets/img/1.png" alt="It's me" title="Hi!" width="300">
-      <h1 class="main-header">Hi, I'm Natalia!</h1>
-      <h2 class="main-subheader">Frontend Developer / HTML-coder</h2>
-      <section class="contacts">
-        <ul class="list contact-list">
-          <li class="contact-item"><a class="link contact-link header-link"  href="https://www.linkedin.com/in/nataliavozhdaeva/"></a></li>
-          <li class="contact-item"><a class="link contact-link header-link"  href="https://github.com/NataliaVozhdaeva/"></a></li>
-          <li class="contact-item"><a class="link contact-link header-link"  href="mailto:NataliaVVozhdaeva@gmail.com"></a></li>
-        </ul>
-      </section>
-      <div class="header-text summary">
-        HTML, CSS, and Javascript developer with experience in OOP including
-        Single Page Application using the MVP. Have been developing since 2020.
-        Can make layout adaptive and cross-browser. Have a bit of experience
-        with React and Angular, and continue my learning. A quick learner. Have
-        high attention to details and accuracy of work. Adaptable, driven, and
-        responsible.
+      <div class="header-container">
+        <nav class="navigation">
+          <ul class="list navigation-list">
+            <li class="navigation-item">About me</li>
+            <li class="navigation-item">Skills</li>
+            <li class="navigation-item">Projects</li>
+            <li class="navigation-item">Education</li>
+          </ul>
+          <button class="btn language-btn non-display">RU</button>
+        </nav>
+        <img
+          class="aside-photo img"
+          src="./assets/img/1.png"
+          alt="It's me"
+          title="Hi!"
+          width="300"
+        />
+        <h1 class="main-header">Hi, I'm Natalia!</h1>
+        <h2 class="main-subheader">Frontend Developer / HTML-coder</h2>
+        <section class="contacts">
+          <ul class="list contact-list">
+            <li class="contact-item">
+              <a
+                class="link contact-link header-link"
+                href="https://www.linkedin.com/in/nataliavozhdaeva/"
+              ></a>
+            </li>
+            <li class="contact-item">
+              <a
+                class="link contact-link header-link"
+                href="https://github.com/NataliaVozhdaeva/"
+              ></a>
+            </li>
+            <li class="contact-item">
+              <a
+                class="link contact-link header-link"
+                href="mailto:NataliaVVozhdaeva@gmail.com"
+              ></a>
+            </li>
+          </ul>
+        </section>
+        <div class="header-text summary">
+          HTML, CSS, and Javascript developer with experience in OOP including
+          Single Page Application using the MVP. Have been developing since
+          2020. Can make layout adaptive and cross-browser. Have a bit of
+          experience with React and Angular, and continue my learning. A quick
+          learner. Have high attention to details and accuracy of work.
+          Adaptable, driven, and responsible.
+        </div>
       </div>
     </header>
+
     <main class="main">
+      <div class="main-container">
+        <section class="skills">
+          <h2 class="skills-title">Skills</h2>
+          <ul class="skills">
+            <li class="skills-item">HTML, CSS (Flex, Grid)</li>
+            <li class="skills-item">Javascript</li>
+            <li class="skills-item">SCSS, PUG;</li>
+            <li class="skills-item">Gulp, webpack</li>
+            <li class="skills-item">GIT</li>
+            <li class="skills-item">BEM</li>
+            <li class="skills-item">OOP</li>
+            <li class="skills-item">Figma, Photoshop</li>
+          </ul>
+          <h4 class="languages-title">Languages:</h4>
+          <ul class="languages">
+            <li class="languages-item">English (B1, in progress)</li>
+            <li class="languages-item">Italian (A1)</li>
+            <li class="languages-item">Russian (Native)</li>
+          </ul>
+        </section>
 
-      <section class="skills">
-        <h2 class="skills-title">Skills</h2>
-        <ul class="skills">
-          <li class="skills-item">HTML, CSS (Flex, Grid)</li>
-          <li class="skills-item">Javascript</li>
-          <li class="skills-item">SCSS, PUG;</li>
-          <li class="skills-item">Gulp, webpack</li>
-          <li class="skills-item">GIT</li>
-          <li class="skills-item">BEM</li>
-          <li class="skills-item">OOP</li>
-          <li class="skills-item">Figma, Photoshop</li>
-        </ul>
-        <h4 class="languages-title">Languages:</h4>
-        <ul class="languages">
-          <li class="languages-item">English (B1, in progress)</li>
-          <li class="languages-item">Italian (A1)</li>
-          <li class="languages-item">Russian (Native)</li>
-        </ul>
-      </section>
+        <section class="about">
+          Have a degree in journalism. Began to be interested in programming at
+          school, but at that time we had programming lessons just in a graduate
+          year, and that wasn't enough to enter university. Studied myself and
+          in 2020 understood that need a system education, and started courses.
+          Take part in the game "What? Where? When?" (something like “Jeopardy”,
+          but with the team), sort the garbage, inspired by pixel-perfect, which
+          match from the first time, like knitting and cats.
+        </section>
 
-      <section class="about">
-        Have a degree in journalism. Began to be interested in programming at school, but at that time we had programming 
-        lessons just in a graduate year, and that wasn't enough to enter university. Studied myself and in 2020 understood 
-        that need a system education, and started courses.
-        Take part in the game "What? Where? When?" (something like “Jeopardy”, but with the team), sort the garbage, 
-        inspired by pixel-perfect, which match from the first time, like knitting and cats.
-      </section>
+        <section class="experience">
+          <h3 class="section-title experience-title">My experience</h3>
+          <ul class="list experience-list">
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://github.com/NataliaVozhdaeva/Cinemaddict"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/cinemaddict.png"
+                    alt="landing for Design Studio"
+                    width="600"
+                  />
+                </a>
+                <figcaption>
+                  Project from learning, just with desctop version.
+                </figcaption>
+              </figure>
+              <h4 class="pet-title">Cinemaddict</h4>
+              <ul class="list features">
+                <li class="features-item">REST API;</li>
+                <li class="features-item">progressive loading;</li>
+                <li class="features-item">
+                  "shake effect" for interactive components when the server
+                  doesn't respond;
+                </li>
+                <li class="features-item">adding and deleting comments;</li>
+                <li class="features-item">filter, sort, and user's rating;</li>
+                <li class="features-item">fixing the academy's code.</li>
+              </ul>
+            </li>
 
-      <section class="experience">
-        <h3 class="section-title experience-title">My experience</h3>
-        <ul class="list experience-list">
-          <li class="experience-item">
-            <h4 class="item-title">Pet-projects</h4>
-            <figure>
-              <img src="./img/design.png" alt="landing for Design Studio" width="400" >
-              <figcaption>
-                <p class="item-text experience-text">Free figma layout, just with desctop version. </p>
-              </figcaption>
-             </figure>
-             <h4 class="pet-title"> <a class="link pet-link" href="https://nataliavozhdaeva.github.io/Design-Studio"  target="_blank">
-              Landing for Design Studio </a>
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://nataliavozhdaeva.github.io/Design-Studio"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/design.png"
+                    alt="landing for Design Studio"
+                    width="600"
+                  />
+                </a>
+                <figcaption>
+                  Pet-project. Free figma layout, just with desctop version.
+                </figcaption>
+              </figure>
+              <h4 class="pet-title">Landing for Design Studio</h4>
+              <ul class="list features">
+                <li class="features-item">
+                  desctop, adaptive and fluid layout. Used flex, grid, position.
+                </li>
+                <li class="features-item">scroll animation;</li>
+                <li class="features-item">neverending slider (feedback);</li>
+                <li class="features-item">usual slider (examples);</li>
+                <li class="features-item">burger-menu for small screens.</li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://github.com/NataliaVozhdaeva/test_level"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/levelup.png"
+                    alt="landing for dietary supplement"
+                    width="600"
+                  />
+                </a>
+                <figcaption>Test-task. Liquid & adaptive layout.</figcaption>
+              </figure>
+              <h4 class="pet-title">Level Up</h4>
+              <ul class="list features">
+                <li class="features-item">flex, grid;</li>
+                <li class="features-item">@keyframes animation;</li>
+                <li class="features-item">video-background, gradients;</li>
+                <li class="features-item">burger-menu for small screens;</li>
+                <li class="features-item">countdown timer;</li>
+                <li class="features-item">neverending slider.</li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://nataliavozhdaeva.github.io/WatchStore/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/watchStore.jpg"
+                    alt="landing for dietary supplement"
+                    width="600"
+                  />
+                </a>
+                <figcaption>Pet-project. Just descktop version.</figcaption>
+              </figure>
+              <h4 class="pet-title">Level Up</h4>
+              <ul class="list features">
+                <li class="features-item">flex, position;</li>
+                <li class="features-item">@keyframes animation;</li>
+                <li class="features-item">modal window;</li>
+                <li class="features-item">neverending slider.</li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://github.com/NataliaVozhdaeva/JaneDoe"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/JD.png"
+                    alt="landing for dietary supplement"
+                    width="600"
+                  />
+                </a>
+                <figcaption>
+                  Pet-project. Social-media page, adaptive layout.
+                </figcaption>
+              </figure>
+              <h4 class="pet-title">Jane Dow</h4>
+              <ul class="list features">
+                <li class="features-item">grid, position;</li>
+                <li class="features-item">custom checkbox;</li>
+                <li class="features-item">css slider;</li>
+                <li class="features-item">form validation;</li>
+                <li class="features-item">interactive elements.</li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://determined-swanson-a44406.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/beautySalon.jpg"
+                    alt="landing for beauty salon"
+                    width="600"
+                  />
+                </a>
+                <figcaption>
+                  Project from learning, just descktop version.
+                </figcaption>
+              </figure>
+              <h4 class="pet-title">Beauty salon</h4>
+              <ul class="list features">
+                <li class="features-item">flex, position, bootstrap;</li>
+                <li class="features-item">
+                  service's tabs switching (plugin, JS);
+                </li>
+                <li class="features-item">modal window for order;</li>
+                <li class="features-item">photo's carousel (@fancybox, JS);</li>
+                <li class="features-item">REST API.</li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <figure>
+                <a
+                  class="link pet-link"
+                  href="https://github.com/NataliaVozhdaeva/BeautyWorld/tree/crm1"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/crm.jpg"
+                    alt="CRM for beauty salon"
+                    width="600"
+                  />
+                </a>
+                <figcaption>
+                  Project from learning, just descktop version.
+                </figcaption>
+              </figure>
+              <h4 class="pet-title">CRM for Beauty salon. React</h4>
+              <ul class="list features">
+                <li class="features-item">interaction with the server;</li>
+                <li class="features-item">CRUD-operations;</li>
+                <li class="features-item">
+                  choosing a service, date, and master;
+                </li>
+                <li class="features-item">
+                  form for adding, deleting, and updating orders.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="education">
+          <h3 class="section-title education-title">Education</h3>
+          <ul class="list education-list">
+            <li class="education-item">
+              <h4 class="item-title">RSScool 12.2022 - right now</h4>
+            </li>
+            <li class="education-item">
+              <h4 class="item-title">HTML-academy 04.2022-06.2022</h4>
+              <p class="item-text education-text">
+                OOP, architecture patterns, class components, working with
+                someone else's code.
+              </p>
+            </li>
+            <li class="education-item">
+              <h4 class="item-title">Rubius Academy 02.2021 - 04.2021</h4>
+              <p class="item-text education-text">
+                Gulp, webpack, React, CRUD operations. Async server's work
+                (fetch).
+              </p>
+            </li>
+            <li class="education-item">
+              <h4 class="item-title">
+                Tomsk State University of Control Systems and Radioelectronics
+                01.2020 - 04.2020
               </h4>
-            <ul class="features">
-              <li class="features-item">desctop, adaptive and fluid layout. Used flex, grid, position.</li>
-              <li class="features-item">scroll animation;</li>
-              <li class="features-item">neverending slider (feedback);</li>
-              <li class="features-item">usual slider (examples);</li>
-              <li class="features-item">burger-menu for small screens.</li>
-            </ul>
-           </li>
-          <li class="experience-item">
-            
-            (https://github.com/NataliaVozhdaeva/Cinemaddict)
-            <ul class="features">
-              <li class="features-item">REST API;</li>
-              <li class="features-item">progressive loading;</li>
-              <li class="features-item">"shake effect" for interactive components when the server doesn't respond;</li>
-              <li class="features-item">adding and deleting comments;</li>
-              <li class="features-item">filter, sort, and user's rating;</li>
-              <li class="features-item">fixing the academy's code.</li>
-            </ul>
-           </li>
-          <li class="experience-item">
-            I created a [landing](https://determined-swanson-a44406.netlify.app/) for a Beauty salon (HTML, SCSS, JS, bootstrap). Realized:</p>
-            <ul class="features">
-              <li class="features-item">service's tabs switching (plugin, JS);</li>
-              <li class="features-item">modal window for order</li>
-              <li class="features-item">photo's carousel (@fancybox, JS)</li>
-            </ul>
-            <p class="item-text experience-text">Also I developed the [CRM for the salon](https://github.com/NataliaVozhdaeva/BeautyWorld/tree/crm1) with React. Realized:</p>
-            <ul class="features">
-              <li class="features-item">interaction with the server, CRUD-operations;</li>
-              <li class="features-item">choosing a service, date, and master;</li>
-              <li class="features-item">form for adding, deleting, and updating orders.</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section class="education">
-        <h3 class="section-title education-title">Education</h3>
-        <ul class="list education-list">
-          <li class="education-item"><h4 class="item-title">RSScool 12.2022 - right now</h4></li>
-          <li class="education-item">
-            <h4 class="item-title">HTML-academy 04.2022-06.2022</h4>
-            <p class="item-text education-text">
-              OOP, architecture patterns, class components, working with someone else's code.
-            </p>
-          </li>
-          <li class="education-item"><h4 class="item-title">Rubius Academy 02.2021 - 04.2021</h4>
-            <p class="item-text education-text">
-              Gulp, webpack, React, CRUD operations. Async server's work (fetch).
-            </p>
-          </li>
-          <li class="education-item">
-            <h4 class="item-title">Tomsk State University of Control Systems and Radioelectronics 01.2020 - 04.2020</h4>
-            <p class="item-text education-text">
-              HTML5 and CSS3, javaScript, jQuery, Canvas. Implementation of complex visual effects: parallax, animations;
-            </p>
-          </li>
-          <li class="education-item"></li>
-        </ul>
-      </section>
-
+              <p class="item-text education-text">
+                HTML5 and CSS3, javaScript, jQuery, Canvas. Implementation of
+                complex visual effects: parallax, animations;
+              </p>
+            </li>
+            <li class="education-item"></li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
       <a class="link footer-link" href="https://rs.school/js/">
-        <img class="logo footer-logo" src="./assets/img/logo_rs_school.svg" alt="logo RSScool" width="200">
+        <img
+          class="logo footer-logo"
+          src="./assets/img/logo_rs_school.svg"
+          alt="logo RSScool"
+          width="100"
+        />
       </a>
       <div class="btn-wrapper">
         <button class="btn footer-btn downloadcv">Download CV in .pdf</button>
-        <a 
-          class="link btn footer-btn github" 
-          href="https://github.com/NataliaVozhdaeva" 
-          target="_blank">Look at GitHub
+        <a
+          class="link btn footer-btn github"
+          href="https://github.com/NataliaVozhdaeva"
+          target="_blank"
+          >Look at GitHub
         </a>
-        <a 
-          class="link btn footer-btn email" 
-          href="mailto:NataliaVVozhdaeva@gmail.com" 
-          target="_blank">Mail me!
+        <a
+          class="link btn footer-btn email"
+          href="mailto:NataliaVVozhdaeva@gmail.com"
+          target="_blank"
+          >Mail me!
         </a>
-    </div>
+      </div>
     </footer>
   </body>
 </html>

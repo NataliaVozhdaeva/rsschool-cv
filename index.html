@@ -361,40 +361,44 @@
     </main>
 
     <footer class="footer">
-      <a class="link footer-link" href="https://rs.school/js/">
-        <img
-          class="logo footer-logo"
-          src="./assets/img/logo_rs_school.svg"
-          alt="logo RSScool"
-          width="100"
-        >
-      </a>
-      <pre>
-        <code class="code" id="code">
-          function toCamelCase(str){
-            return str.split(/[-_]/).map(function (entry, index) {
-              return index === 0 ? entry : entry.charAt(0).toUpperCase() + entry.slice(1)
-            }).join('');
-          }
-        </code>
-      </pre>
-      <div class="btn-wrapper">
-        <button class="btn footer-btn downloadcv">Download CV in .pdf</button>
-        <a
-          class="link btn footer-btn github"
-          href="https://github.com/NataliaVozhdaeva"
-          target="_blank"
-          >Look at GitHub
+      <div class="footer-container">
+        <a class="link footer-link" href="https://rs.school/js/">
+          <img
+            class="logo footer-logo"
+            src="./assets/img/logo_rs_school.svg"
+            alt="logo RSScool"
+            width="100"
+          >
         </a>
-        <a
-          class="link btn footer-btn email"
-          href="mailto:NataliaVVozhdaeva@gmail.com"
-          target="_blank"
-          >Mail me!
-        </a>
+        <div class="btn-container">
+          <button class="btn footer-btn downloadcv">Download CV in .pdf</button>
+          <a
+            class="link btn footer-btn github"
+            href="https://github.com/NataliaVozhdaeva"
+            target="_blank"
+            >Look at GitHub
+          </a>
+          <a
+            class="link btn footer-btn email"
+            href="mailto:NataliaVVozhdaeva@gmail.com"
+            target="_blank"
+            >Mail me!
+          </a>
+        </div>
+        <pre>
+          <code class="code" id="code">
+            function toCamelCase(str){
+              return str.split(/[-_]/).map(function (entry, index) {
+                return index === 0 ? entry : entry.charAt(0).toUpperCase() + entry.slice(1)
+              }).join('');
+            }
+          </code>
+        </pre>
+        <aside class="aside">
+          <p>2022</p>
+          <a class="link special-link" target="_blank" href="https://icons8.com">Special thanks for icons to "icons8"</a>
+        </aside>
       </div>
-
-      <!-- <a target="_blank" href="https://icons8.com"></a> -->
     </footer>
   </body>
 </html>

@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Resume Natalia Vozhdaeva</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./assets/img/fav-icon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" >
+    <link rel="icon" href="./assets/img/fav-icon.ico" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body class="body">
     <header class="header">
       <div class="header-container">
         <nav class="navigation">
           <ul class="list navigation-list">
-            <li class="navigation-item">About me</li>
-            <li class="navigation-item">Skills</li>
-            <li class="navigation-item">Projects</li>
-            <li class="navigation-item">Education</li>
+            <li class="navigation-item"><a class="link navigation-link" href="#skills">Skills</a></li>
+            <li class="navigation-item"><a class="link navigation-link" href="#about">About me</a></li>
+            <li class="navigation-item"><a class="link navigation-link" href="#experience">Projects</a></li>
+            <li class="navigation-item"><a class="link navigation-link" href="#education">Education</a></li>
+            <li class="navigation-item"><a class="link navigation-link" href="#code">Code example</a></li>
           </ul>
-          <button class="btn language-btn non-display">RU</button>
+          <button class="btn language-btn">RU</button>
         </nav>
-        <img
-          class="aside-photo img"
-          src="./assets/img/1.png"
-          alt="It's me"
-          title="Hi!"
-          width="300"
-        />
-        <h1 class="main-header">Hi, I'm Natalia!</h1>
-        <h2 class="main-subheader">Frontend Developer / HTML-coder</h2>
-        <section class="contacts">
-          <ul class="list contact-list">
-            <li class="contact-item">
-              <a
-                class="link contact-link header-link"
-                href="https://www.linkedin.com/in/nataliavozhdaeva/"
-              ></a>
-            </li>
-            <li class="contact-item">
-              <a
-                class="link contact-link header-link"
-                href="https://github.com/NataliaVozhdaeva/"
-              ></a>
-            </li>
-            <li class="contact-item">
-              <a
-                class="link contact-link header-link"
-                href="mailto:NataliaVVozhdaeva@gmail.com"
-              ></a>
-            </li>
-          </ul>
-        </section>
-        <div class="header-text summary">
-          HTML, CSS, and Javascript developer with experience in OOP including
-          Single Page Application using the MVP. Have been developing since
-          2020. Can make layout adaptive and cross-browser. Have a bit of
-          experience with React and Angular, and continue my learning. A quick
-          learner. Have high attention to details and accuracy of work.
-          Adaptable, driven, and responsible.
+        <div class="summary-container">
+          <img
+            class="summary-photo img"
+            src="./assets/img/1.png"
+            alt="It's me"
+            title="Hi!"
+            width="300"
+          >
+          <div class="summary-text">
+            <h1 class="header-title summary-title">Hi, I'm Natalia!</h1>
+            <h2 class="header-subtitle">Frontend Developer / HTML-coder</h2>
+            <div class="header-text summary">
+              HTML, CSS, and Javascript developer with experience in OOP including
+              Single Page Application using the MVP. Have been developing since
+              2020. Can make layout adaptive and cross-browser. Have a bit of
+              experience with React and Angular, and continue my learning. A quick
+              learner. Have high attention to details and accuracy of work.
+              Adaptable, driven, and responsible.
+            </div>
+          </div>
         </div>
+
+        <ul class="list contact-list">
+          <li class="contact-item">
+            <a
+              class="link contact-link linkedin"
+              href="https://www.linkedin.com/in/nataliavozhdaeva/"
+            ></a>
+          </li>
+          <li class="contact-item">
+            <a
+              class="link contact-link github"
+              href="https://github.com/NataliaVozhdaeva/"
+            ></a>
+          </li>
+          <li class="contact-item">
+            <a
+              class="link contact-link mail"
+              href="mailto:NataliaVVozhdaeva@gmail.com"
+            ></a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main class="main">
       <div class="main-container">
-        <section class="skills">
-          <h2 class="skills-title">Skills</h2>
+        <section class="skills" id="skills">
+          <h2 class="section-title skills-title">Skills</h2>
           <ul class="skills">
             <li class="skills-item">HTML, CSS (Flex, Grid)</li>
             <li class="skills-item">Javascript</li>
@@ -89,8 +93,8 @@
             <li class="languages-item">Russian (Native)</li>
           </ul>
         </section>
-
-        <section class="about">
+        <h3 class="section-title about-title">A little bit more about me</h3>
+        <div class="about">
           Have a degree in journalism. Began to be interested in programming at
           school, but at that time we had programming lessons just in a graduate
           year, and that wasn't enough to enter university. Studied myself and
@@ -98,9 +102,9 @@
           Take part in the game "What? Where? When?" (something like “Jeopardy”,
           but with the team), sort the garbage, inspired by pixel-perfect, which
           match from the first time, like knitting and cats.
-        </section>
+        </div>
 
-        <section class="experience">
+        <section class="experience" id="experience">
           <h3 class="section-title experience-title">My experience</h3>
           <ul class="list experience-list">
             <li class="experience-item">
@@ -114,7 +118,7 @@
                     src="./assets/img/cinemaddict.png"
                     alt="landing for Design Studio"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>
                   Project from learning, just with desctop version.
@@ -145,7 +149,7 @@
                     src="./assets/img/design.png"
                     alt="landing for Design Studio"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>
                   Pet-project. Free figma layout, just with desctop version.
@@ -174,7 +178,7 @@
                     src="./assets/img/levelup.png"
                     alt="landing for dietary supplement"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>Test-task. Liquid & adaptive layout.</figcaption>
               </figure>
@@ -200,7 +204,7 @@
                     src="./assets/img/watchStore.jpg"
                     alt="landing for dietary supplement"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>Pet-project. Just descktop version.</figcaption>
               </figure>
@@ -224,7 +228,7 @@
                     src="./assets/img/JD.png"
                     alt="landing for dietary supplement"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>
                   Pet-project. Social-media page, adaptive layout.
@@ -251,7 +255,7 @@
                     src="./assets/img/beautySalon.jpg"
                     alt="landing for beauty salon"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>
                   Project from learning, just descktop version.
@@ -280,7 +284,7 @@
                     src="./assets/img/crm.jpg"
                     alt="CRM for beauty salon"
                     width="600"
-                  />
+                  >
                 </a>
                 <figcaption>
                   Project from learning, just descktop version.
@@ -301,7 +305,7 @@
           </ul>
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
           <h3 class="section-title education-title">Education</h3>
           <ul class="list education-list">
             <li class="education-item">
@@ -344,8 +348,17 @@
           src="./assets/img/logo_rs_school.svg"
           alt="logo RSScool"
           width="100"
-        />
+        >
       </a>
+      <pre>
+        <code class="code" id="code">
+          function toCamelCase(str){
+            return str.split(/[-_]/).map(function (entry, index) {
+              return index === 0 ? entry : entry.charAt(0).toUpperCase() + entry.slice(1)
+            }).join('');
+          }
+        </code>
+      </pre>
       <div class="btn-wrapper">
         <button class="btn footer-btn downloadcv">Download CV in .pdf</button>
         <a
@@ -361,6 +374,8 @@
           >Mail me!
         </a>
       </div>
+
+      <!-- <a target="_blank" href="https://icons8.com"></a> -->
     </footer>
   </body>
 </html>

@@ -2,6 +2,7 @@
   --border-width: 3px;
   --light-blue: rgba(0, 212, 255, 1);
   --deep-blue: rgba(2, 0, 36, 1);
+  --violet: #681ab1;
 }
 
 .body {
@@ -122,11 +123,12 @@
 
 .section-title {
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .header-container {
   margin: 35px auto 200px;
-  width: 95vw;
+  width: 85vw;
 }
 
 .navigation {
@@ -136,13 +138,15 @@
 }
 
 .navigation-list {
-  width: 30vw;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 15px;
 }
 
 .language-btn {
   width: 50px;
+  margin-left: auto;
 }
 
 .summary-container {
@@ -197,4 +201,104 @@
 
 .github {
   background: url('./assets/img/icons/git.png');
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 100px 15vw;
+  margin-bottom: 100px;
+  height: 100vh;
+
+  background: linear-gradient(
+    to top,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad
+  );
+  color: #000000;
+}
+
+.skills-list,
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  height: 200px;
+  margin-bottom: 75px;
+}
+
+.languages-title {
+  display: inline-block;
+  margin: 0;
+}
+
+.languages-list {
+  row-gap: 30px;
+  font-weight: bold;
+}
+
+.about {
+  line-height: 2em;
+  text-align: justify;
+}
+
+.experience {
+  width: 75vw;
+  margin: 0 auto 100px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.experience-item {
+  display: grid;
+  column-gap: 30px;
+  align-items: center;
+  grid-template-columns: 650px 1fr 20vw;
+}
+
+.pet-link {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+}
+
+.pet-link:hover {
+  box-shadow: 0 0 15px 0 #ffffff;
+}
+
+.pet-title {
+  flex-grow: 1;
+}
+
+.features {
+  line-height: 2em;
+}
+
+.education {
+  width: 70vw;
+  margin: 0 auto 100px;
+}
+
+.education-item {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 1fr 300px 1fr;
+}
+
+.education-item-title {
+  flex-grow: 1;
+}
+
+.education-text {
+  max-width: 25vw;
 }

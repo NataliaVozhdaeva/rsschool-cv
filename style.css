@@ -19,11 +19,7 @@
   font-size: 18px;
 
   background: rgb(2, 0, 36);
-  background: radial-gradient(
-      circle at bottom,
-      #681ab1 6.34%,
-      rgba(67, 67, 67, 0)
-    ),
+  background: linear-gradient(to top, #681ab1 33.34%, rgba(67, 67, 67, 0)),
     radial-gradient(
       circle at center left,
       #2d005a 34.34%,
@@ -295,6 +291,10 @@
   grid-template-columns: 1fr 300px 1fr;
 }
 
+.education-item:not(:last-child) {
+  border-bottom: rgba(255, 255, 255, 0.5) solid var(--border-width);
+}
+
 .education-item-title {
   flex-grow: 1;
 }
@@ -306,14 +306,12 @@
 .footer-container {
   width: 90vw;
   margin: auto;
-  padding: 50px 0 0;
-  display: grid;
-  grid-template-columns: 200px auto 1fr;
-  border-top: var(--border-width) solid #ffffff;
-}
+  padding: 50px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
-.code {
-  margin-left: -50px;
+  border-top: var(--border-width) solid #ffffff;
 }
 
 .btn-container {
@@ -335,6 +333,14 @@
   border-top: 1px solid #ffffff;
 }
 
+.code {
+  color: #000000;
+}
+
+.aside-text {
+  margin: 0;
+}
+
 .special-link {
   display: inline-block;
 }
@@ -345,6 +351,7 @@
 
 .footer-btn {
   font-size: 18px;
+  padding: 10px 20px;
 
   background-color: var(--violet);
   background-image: none;

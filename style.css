@@ -71,6 +71,7 @@
   border: none;
   border-radius: var(--border-width);
   background: var(--light-blue);
+  transition: 0.3s;
 }
 
 .btn::after,
@@ -203,9 +204,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 100px 15vw;
+  padding: 100px 15vw 200px;
   margin-bottom: 100px;
-  height: 100vh;
 
   background: linear-gradient(
     to top,
@@ -276,8 +276,19 @@
   flex-grow: 1;
 }
 
+.pet-link {
+  display: flex;
+}
+
 .features {
   line-height: 2em;
+
+  list-style: disc;
+}
+
+.figure {
+  min-width: 600px;
+  background-color: #681ab1;
 }
 
 .education {

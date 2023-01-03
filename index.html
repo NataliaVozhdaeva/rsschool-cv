@@ -25,7 +25,8 @@
             <li class="navigation-item"><a class="link navigation-link" href="#education">Education</a></li>
             <li class="navigation-item"><a class="link navigation-link" href="#code">Code example</a></li>
           </ul>
-          <button class="btn language-btn">RU</button>
+          <a class="link btn language-btn">RU</a>
+          <div class="popup">Something has gone wrong, but I'm already working on it. Please, try again later or write me, if you need it right now</div>
         </nav>
         <div class="summary-container">
           <img
@@ -94,8 +95,8 @@
               </ul>
             </li>
           </ul>
-          <h3 class="section-title about-title">A little bit more about me</h3>
-          <div class="about">
+          <h3 class="section-title about-title" id="about">A little bit more about me</h3>
+          <div class="about" id="about">
             Have a degree in journalism. Began to be interested in programming at
             school, but at that time we had programming lessons just in a graduate
             year, and that wasn't enough to enter university. Studied myself and
@@ -110,7 +111,7 @@
           <h3 class="section-title experience-title">My experience</h3>
           <ul class="list experience-list">
             <li class="experience-item">
-              <figure>
+              <figure class="figure">
                 <a
                   class="link pet-link"
                   href="https://github.com/NataliaVozhdaeva/Cinemaddict"
@@ -120,13 +121,12 @@
                     src="./assets/img/cinemaddict.png"
                     alt="landing for Design Studio"
                     width="600"
-                  >
-                </a>
+                  ></a>
                 <figcaption>
                   Cinemaddict
                 </figcaption>
               </figure>
-              <h4 class="pet-title">Project from learning, just with desctop version.</h4>
+              <h4 class="pet-title">Project from learning, just with desktop version.</h4>
               <ul class="list features">
                 <li class="features-item">REST API;</li>
                 <li class="features-item">progressive loading;</li>
@@ -141,7 +141,33 @@
             </li>
 
             <li class="experience-item">
-              <figure>
+              <figure class="figure">
+                <a
+                  class="link pet-link"
+                  href="https://nataliavozhdaeva.github.io/travel-test/dist/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/travel.png"
+                    alt="page with tour schedule"
+                    width="600"
+                  >
+                </a>
+                <figcaption>
+                  Tour schedule
+                </figcaption>
+              </figure>
+              <h4 class="pet-title">Test task.</h4>
+              <ul class="list features">
+                <li class="features-item">adaptive layout (mobile, desktop);</li>
+                <li class="features-item">liquid layout (flex, position);</li>
+                <li class="features-item">if there are too much time-slots and a lack of place in the string, 
+                  additing slots are hid, the more-button is appears and shows additing slots on click;</li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <figure class="figure">
                 <a
                   class="link pet-link"
                   href="https://nataliavozhdaeva.github.io/Design-Studio"
@@ -159,9 +185,8 @@
               </figure>
               <h4 class="pet-title">Pet-project. Free figma layout, just with desctop version.</h4>
               <ul class="list features">
-                <li class="features-item">
-                  desctop, adaptive and fluid layout. Used flex, grid, position.
-                </li>
+                <li class="features-item">adaptive layout (from mobile to desktop);</li>
+                <li class="features-item">liquid layout (flex, grid, position);</li>
                 <li class="features-item">scroll animation;</li>
                 <li class="features-item">neverending slider (feedback);</li>
                 <li class="features-item">usual slider (examples);</li>
@@ -170,7 +195,7 @@
             </li>
 
             <li class="experience-item">
-              <figure>
+              <figure class="figure">
                 <a
                   class="link pet-link"
                   href="https://github.com/NataliaVozhdaeva/test_level"
@@ -196,7 +221,7 @@
             </li>
 
             <li class="experience-item">
-              <figure>
+              <figure class="figure">
                 <a
                   class="link pet-link"
                   href="https://nataliavozhdaeva.github.io/WatchStore/"
@@ -219,7 +244,7 @@
             </li>
 
             <li class="experience-item">
-              <figure>
+              <figure  class="figure">
                 <a
                   class="link pet-link"
                   href="https://github.com/NataliaVozhdaeva/JaneDoe"
@@ -246,7 +271,7 @@
             </li>
 
             <li class="experience-item">
-              <figure>
+              <figure class="figure">
                 <a
                   class="link pet-link"
                   href="https://determined-swanson-a44406.netlify.app/"
@@ -275,7 +300,7 @@
             </li>
 
             <li class="experience-item">
-              <figure>
+              <figure class="figure">
                 <a
                   class="link pet-link"
                   href="https://github.com/NataliaVozhdaeva/BeautyWorld/tree/crm1"
@@ -371,7 +396,13 @@
           >
         </a>
         <div class="btn-container">
-          <button class="btn footer-btn downloadcv">Download CV in .pdf</button>
+          <a 
+            class="link btn footer-btn downloadcv" 
+            href="./assets/docs/CV Frontend Vozhdaeva.pdf" 
+            target="_blank"
+            download
+            >Download CV in .pdf
+          </a>
           <a
             class="link btn footer-btn github"
             href="https://github.com/NataliaVozhdaeva"
@@ -398,5 +429,14 @@
         </aside>
       </div>
     </footer>
+    <script>
+      const langBtn = document.querySelector('.language-btn');
+      langBtn.addEventListener('click', ()=>{
+        const popup=document.querySelector('.popup');
+        popup.classList.add('show-popup')
+
+        setTimeout(()=>{popup.classList.remove('show-popup')}, 5000)
+      })
+    </script>
   </body>
 </html>

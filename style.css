@@ -20,17 +20,8 @@
 
   background: rgb(2, 0, 36);
   background: linear-gradient(to top, var(--violet) 33.34%, rgba(67, 67, 67, 0)),
-    radial-gradient(
-      circle at center left,
-      #2d005a 34.34%,
-      rgba(67, 67, 67, 0) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
+    radial-gradient(circle at center left, #2d005a 34.34%, rgba(67, 67, 67, 0) 100%),
+    linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   color: #ffffff;
 }
 
@@ -85,17 +76,7 @@
   z-index: -1;
 
   border-radius: calc(2 * var(--border-width));
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
@@ -233,23 +214,21 @@
   background: url('./assets/img/icons/git.png');
 }
 
+.skills-wrapper {
+  box-sizing: border-box;
+  padding: 130px 5vw 200px;
+  height: 110vh;
+  width: 100vw;
+
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+  color: #000000;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 100px 15vw 200px;
-  margin-bottom: 100px;
-
-  background: linear-gradient(
-    to top,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad
-  );
-  color: #000000;
+  opacity: 1;
 }
 
 .skills-list,
@@ -259,7 +238,7 @@
   flex-wrap: wrap;
   gap: 50px 30px;
   height: 200px;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
 }
 
 .languages-title {
@@ -321,15 +300,7 @@
 
 .figure {
   min-width: 600px;
-  background: linear-gradient(
-    to right,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad
-  );
+  background: linear-gradient(to right, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
 }
 
 .education {
@@ -408,4 +379,20 @@
   background-color: var(--violet);
   background-image: none;
   color: #ffffff;
+}
+
+.main-container {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.skills-scroll {
+  margin-bottom: 75px;
+  height: 100vw;
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
 }

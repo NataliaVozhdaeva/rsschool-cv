@@ -8,10 +8,10 @@
 
     <link rel="stylesheet" href="style.css" >
     <link rel="icon" href="./assets/img/fav-icon.ico" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+   <!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet" >
+      rel="stylesheet" > -->
   </head>
   <body class="body">
     <header class="header">
@@ -74,37 +74,42 @@
     </header>
     <main class="main">
       <div class="main-container">
-        <section class="skills" id="skills">
-          <h2 class="section-title skills-title">Skills</h2>
-          <ul class="list skills-list">
-            <li class="skills-item">HTML, CSS (Flex, Grid)</li>
-            <li class="skills-item">Javascript</li>
-            <li class="skills-item">SCSS, PUG;</li>
-            <li class="skills-item">Gulp, webpack</li>
-            <li class="skills-item">GIT</li>
-            <li class="skills-item">BEM</li>
-            <li class="skills-item">OOP</li>
-            <li class="skills-item">Figma, Photoshop</li>
-            <li class="skills-item">
-              <ul class="list languages-list">
-                <li class="languages-item skills-item"><h4 class="languages-title">Languages:</h4></li>
-                <li class="languages-item skills-item">English (B1, in progress)</li>
-                <li class="languages-item skills-item">Italian (A1)</li>
-                <li class="languages-item skills-item">Russian (Native)</li>
-              </ul>
-            </li>
-          </ul>
-          <h3 class="section-title about-title" id="about">A little bit more about me</h3>
-          <div class="about">
-            Have a degree in journalism. Began to be interested in programming at
-            school, but at that time we had programming lessons just in a graduate
-            year, and that wasn't enough to enter university. Studied myself and
-            in 2020 understood that need a system education, and started courses.
-            Take part in the game "What? Where? When?" (something like “Jeopardy”,
-            but with the team), sort the garbage, inspired by pixel-perfect, which
-            match from the first time, like knitting and cats.
-          </div>
-        </section>
+        <div class="skills-wrapper">
+          <section class="skills" id="skills">
+            <h2 class="section-title skills-title">Skills</h2>
+            <ul class="list skills-list">
+              <li class="skills-item">HTML, CSS (Flex, Grid)</li>
+              <li class="skills-item">Javascript</li>
+              <li class="skills-item">SCSS, PUG;</li>
+              <li class="skills-item">Gulp, webpack</li>
+              <li class="skills-item">GIT</li>
+              <li class="skills-item">BEM</li>
+              <li class="skills-item">OOP</li>
+              <li class="skills-item">Figma, Photoshop</li>
+              <li class="skills-item">
+                <ul class="list languages-list">
+                  <li class="languages-item skills-item"><h4 class="languages-title">Languages:</h4></li>
+                  <li class="languages-item skills-item">English (B1, in progress)</li>
+                  <li class="languages-item skills-item">Italian (A1)</li>
+                  <li class="languages-item skills-item">Russian (Native)</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="about">
+              <h3 class="section-title about-title" id="about">A little bit more about me</h3>
+              <p>
+              Have a degree in journalism. Began to be interested in programming at
+              school, but at that time we had programming lessons just in a graduate
+              year, and that wasn't enough to enter university. Studied myself and
+              in 2020 understood that need a system education, and started courses.
+              Take part in the game "What? Where? When?" (something like “Jeopardy”,
+              but with the team), sort the garbage, inspired by pixel-perfect, which
+              match from the first time, like knitting and cats.</p>
+            </div>
+          </section>
+        </div>
+        <div class="skills-scroll"></div>
         <section class="experience" id="experience">
           <h3 class="section-title experience-title">My experience</h3>
           <ul class="list experience-list">
@@ -398,14 +403,6 @@
         </aside>
       </div>
     </footer>
-    <script>
-      const langBtn = document.querySelector('.language-btn');
-      langBtn.addEventListener('click', ()=>{
-        const popup=document.querySelector('.popup');
-        popup.classList.add('show-popup')
-
-        setTimeout(()=>{popup.classList.remove('show-popup')}, 5000)
-      })
-    </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>

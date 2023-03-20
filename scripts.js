@@ -1,7 +1,23 @@
+//experiens animation
+const experience = document.querySelector('#experience');
+const expItems = experience.querySelectorAll('.experience-item');
+const projectBtns = experience.querySelectorAll('.experience-thumbnail');
+const projecImgs = [
+  './assets/img/cinemaddict.png',
+  './assets/img/travel.png',
+  './assets/img/design.png',
+  './assets/img/levelup.png',
+  './assets/img/watchStore.jpg',
+  './assets/img/JD.png',
+  './assets/img/beautySalon.jpg',
+  './assets/img/crm.jpg',
+];
+
+projectBtns.forEach((el, i) => (el.style.backgroundImage = `url(${projecImgs[i]})`));
+
 //skills opacity
 const skills = document.querySelector('#skills');
 const skillsContainer = document.querySelector('.skills-wrapper');
-const experience = document.querySelector('#experience');
 
 let computedStyle = getComputedStyle(skills);
 let currentOpacity = computedStyle.opacity;

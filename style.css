@@ -215,10 +215,12 @@
 }
 
 .skills-wrapper {
+  position: static;
   box-sizing: border-box;
-  padding: 130px 5vw 200px;
-  height: 110vh;
-  width: 100vw;
+  padding: 80px 5vw 200px;
+  margin-bottom: 100px;
+  height: 160vh;
+  width: 100%;
 
   background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
   color: #000000;
@@ -267,11 +269,37 @@
   row-gap: 50px;
 }
 
-.experience-item {
+/* .experience-item {
   display: grid;
   column-gap: 30px;
   align-items: center;
-  grid-template-columns: 650px 1fr 20vw;
+  grid-template-columns: 2fr 1fr 20vw;
+} */
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  align-items: center;
+  height: 450px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .experience-item {
+    height: auto;
+    row-gap: 20px;
+  }
+}
+
+.pet-title {
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  .pet-title {
+    margin: auto;
+  }
 }
 
 .pet-link {
@@ -284,23 +312,25 @@
   box-shadow: 0 0 15px 0 #ffffff;
 }
 
-.pet-title {
-  flex-grow: 1;
-}
-
 .pet-link {
   display: flex;
 }
 
 .features {
   line-height: 2em;
-
   list-style: disc;
+  max-width: 50%;
 }
 
 .figure {
   min-width: 600px;
+  max-width: 50%;
+  color: #000000;
   background: linear-gradient(to right, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+}
+
+figcaption {
+  margin: 10px;
 }
 
 .education {
@@ -388,11 +418,6 @@
 .fixed {
   position: fixed;
   top: 0;
-  overflow-y: hidden;
-}
-
-.skills-scroll {
-  margin-bottom: 75px;
-  height: 100vw;
-  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+  left: 5vw;
+  right: 5vw;
 }

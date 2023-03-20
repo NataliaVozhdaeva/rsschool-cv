@@ -1,32 +1,47 @@
 //skills opacity
 const skills = document.querySelector('#skills');
 const skillsContainer = document.querySelector('.skills-wrapper');
+const experience = document.querySelector('#experience');
 
 let computedStyle = getComputedStyle(skills);
 let currentOpacity = computedStyle.opacity;
+let lastScrollTop = 0;
 
 document.addEventListener('scroll', function () {
-  let targetPosition = {
+  let skillsPosition = {
       top: window.pageYOffset + skillsContainer.getBoundingClientRect().top,
+      bottom: window.pageYOffset + skillsContainer.getBoundingClientRect().bottom,
     },
     windowPosition = {
       top: window.pageYOffset,
+      bottom: window.pageYOffset + document.documentElement.clientHeight,
     };
 
-  let scrollTop = document.scrollHeight;
+  let top = window.pageYOffset;
 
-  if (targetPosition.top - windowPosition.top < 3) {
-    skillsContainer.classList.add('fixed');
-    currentOpacity -= 0.02;
-    skills.style.opacity = currentOpacity;
-
-    if (document.scrollHeight > scrollTop) {
-      console.log('down');
-      scrollTop = document.scrollHeight;
-    } else {
-      console.log('up');
+  if (lastScrollTop < top) {
+    if (skillsPosition.top - windowPosition.top < 10) {
+      currentOpacity -= 0.02;
+      skills.style.opacity = currentOpacity;
+      skills.classList.add('fixed');
+      if (currentOpacity < 0 || skillsPosition.bottom - windowPosition.top < 750) {
+        currentOpacity = 0;
+        skills.classList.remove('fixed');
+      }
+    }
+  } else {
+    if (skillsPosition.bottom - windowPosition.top > 630) {
+      currentOpacity += 0.02;
+      skills.style.opacity = currentOpacity;
+      skills.classList.add('fixed');
+      if (currentOpacity > 1 || skillsPosition.top - windowPosition.top > 0) {
+        currentOpacity = 1;
+        skills.classList.remove('fixed');
+      }
     }
   }
+
+  lastScrollTop = top;
 });
 
 // lang change

@@ -1,4 +1,4 @@
-//experiens animation
+//experience animation
 const experience = document.querySelector('#experience');
 const expItems = experience.querySelectorAll('.experience-item');
 //const projectBtns = experience.querySelectorAll('.experience-thumbnail');
@@ -8,9 +8,9 @@ const projecImgs = [
   './assets/img/elite-fire.png',
   './assets/img/comments-form.png',
   './assets/img/bikes.png',
-  '',
   './assets/img/cinemaddict.png',
   './assets/img/travel.png',
+  '',
   './assets/img/design.png',
   './assets/img/levelup.png',
   './assets/img/watchStore.jpg',
@@ -20,7 +20,7 @@ const projecImgs = [
 ];
 
 projecImgs.forEach((el, i) => {
-  if (i % 4 == 0) {
+  if (i % 5 == 0) {
     expRow = document.createElement('div');
     expRow.classList.add('experience-row');
     experience.append(expRow);
@@ -28,15 +28,26 @@ projecImgs.forEach((el, i) => {
   const expBtn = document.createElement('button');
   expBtn.classList.add('experience-thumbnail');
   expBtn.style.backgroundImage = `url(${el})`;
+  if (el == '') {
+    expBtn.style.visibility = 'hidden';
+  }
   expRow.append(expBtn);
 });
 
 //skills opacity
 const skills = document.querySelector('#skills');
 const skillsContainer = document.querySelector('.skills-wrapper');
+const scaledImg = document.querySelector('.scaled-img');
 
-let computedStyle = getComputedStyle(skills);
-let currentOpacity = computedStyle.opacity;
+let computedStyleForSkills = getComputedStyle(skills);
+let currentOpacity = computedStyleForSkills.opacity;
+
+let computedStyleForBtn = getComputedStyle(scaledImg);
+//let currentWidth = computedStyleForBtn.width;
+let scale = 1;
+translateY = 0;
+translateX = 0;
+
 let lastScrollTop = 0;
 
 document.addEventListener('scroll', function () {
@@ -47,6 +58,10 @@ document.addEventListener('scroll', function () {
     windowPosition = {
       top: window.pageYOffset,
       bottom: window.pageYOffset + document.documentElement.clientHeight,
+    },
+    experiencePosition = {
+      top: window.pageYOffset + experience.getBoundingClientRect().top,
+      bottom: window.pageYOffset + experience.getBoundingClientRect().bottom,
     };
 
   let top = window.pageYOffset;
@@ -56,9 +71,20 @@ document.addEventListener('scroll', function () {
       currentOpacity -= 0.02;
       skills.style.opacity = currentOpacity;
       skills.classList.add('fixed');
+
       if (currentOpacity < 0 || skillsPosition.bottom - windowPosition.top < 750) {
         currentOpacity = 0;
         skills.classList.remove('fixed');
+      }
+
+      if (experiencePosition.top - windowPosition.top < 1) {
+        scale -= 0.1;
+        /* translateY += 5;
+        translateX += 0.1; */
+        scaledImg.style.transform = `scale(${scale})`;
+
+        /*  translate(${translateX}px, ${translateY}px
+         */
       }
     }
   } else {
@@ -76,6 +102,10 @@ document.addEventListener('scroll', function () {
   lastScrollTop = top;
 });
 
+/* let img = this.querySelector('.scaled-img');
+img.classList.remove('non-display');
+scale -= 0.1;
+img.style.transform = scale */
 // lang change
 const langBtn = document.querySelector('.language-btn');
 langBtn.addEventListener('click', () => {

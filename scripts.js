@@ -1,8 +1,14 @@
 //experiens animation
 const experience = document.querySelector('#experience');
 const expItems = experience.querySelectorAll('.experience-item');
-const projectBtns = experience.querySelectorAll('.experience-thumbnail');
+//const projectBtns = experience.querySelectorAll('.experience-thumbnail');
 const projecImgs = [
+  './assets/img/plants.png',
+  './assets/img/git-search.png',
+  './assets/img/elite-fire.png',
+  './assets/img/comments-form.png',
+  './assets/img/bikes.png',
+  '',
   './assets/img/cinemaddict.png',
   './assets/img/travel.png',
   './assets/img/design.png',
@@ -13,7 +19,17 @@ const projecImgs = [
   './assets/img/crm.jpg',
 ];
 
-projectBtns.forEach((el, i) => (el.style.backgroundImage = `url(${projecImgs[i]})`));
+projecImgs.forEach((el, i) => {
+  if (i % 4 == 0) {
+    expRow = document.createElement('div');
+    expRow.classList.add('experience-row');
+    experience.append(expRow);
+  }
+  const expBtn = document.createElement('button');
+  expBtn.classList.add('experience-thumbnail');
+  expBtn.style.backgroundImage = `url(${el})`;
+  expRow.append(expBtn);
+});
 
 //skills opacity
 const skills = document.querySelector('#skills');

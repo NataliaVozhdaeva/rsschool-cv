@@ -44,17 +44,19 @@ projecImgs.forEach((el, i) => {
 
   if (window.innerWidth < 830 && el.src == './assets/img/screen2.png') {
     expBtn.style.backgroundImage = `url('./assets/img/small.png')`;
-  } else if (window.innerWidth < 570 && el.src == './assets/img/screen2.png') {
+  }
+
+  if (window.innerWidth < 570 && el.src == './assets/img/screen2.png') {
     expBtn.style.backgroundImage = `url('./assets/img/mobile-screen.png')`;
   }
 
   if (el.src == './assets/img/screen2.png') {
     const expBtnOver = document.createElement('img');
     expBtnOver.classList.add('scaled-img');
+
     if (window.innerWidth < 570) {
       expBtnOver.setAttribute('src', './assets/img/mobile-screen.png');
-    }
-    if (window.innerWidth < 830) {
+    } else if (window.innerWidth < 830) {
       expBtnOver.setAttribute('src', './assets/img/small.png');
     } else {
       expBtnOver.setAttribute('src', './assets/img/screen2.png');
@@ -160,15 +162,7 @@ modalButtons.forEach(function (item) {
 
     modalElem.classList.add('active');
     overlay.classList.add('active');
-    document.querySelector('.body').classList.add('stop-acroll');
-    /* 
-    const closeButton = document.querySelector('.js-modal-close');
-    closeButton.addEventListener('click', function () {
-      let parentModal = this.closest('.modal');
-      parentModal.classList.remove('active');
-      overlay.classList.remove('active');
-      document.querySelector('.body').classList.remove('stop-scroll');
-    }); */
+    document.querySelector('.body').classList.add('stop-scroll');
   });
 });
 

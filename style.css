@@ -120,6 +120,12 @@ html {
   margin: 0 auto 200px;
 }
 
+@media only screen and (max-width: 830px) {
+  .navigation {
+    margin: 0 auto 70px;
+  }
+}
+
 .navigation-list {
   display: flex;
   justify-content: space-between;
@@ -170,6 +176,14 @@ html {
   display: flex;
   align-items: center;
   column-gap: 50px;
+}
+
+@media only screen and (max-width: 830px) {
+  .summary-container {
+    width: 85vw;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
 }
 
 .summary-photo {
@@ -253,6 +267,13 @@ html {
   margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 830px) {
+  .skills-list,
+  .languages-list {
+    flex-direction: row;
+  }
+}
+
 .languages-title {
   display: inline-block;
   margin: 0;
@@ -290,7 +311,7 @@ html {
     row-gap: 20px;
   }
 }
-*/ .pet-title {
+.pet-title {
   margin-right: auto;
 }
 
@@ -352,6 +373,17 @@ figcaption {
 
 .education-text {
   max-width: 25vw;
+}
+
+@media only screen and (max-width: 615px) {
+  .education-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .education-text {
+    max-width: 100%;
+  }
 }
 
 .footer-container {
@@ -420,13 +452,12 @@ figcaption {
   right: 15vw;
 }
 
-/* .container-absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: 50% 100%;
-  transform: scale(1);
-} */
+@media only screen and (max-width: 1180px) {
+  .fixed {
+    left: 5vw;
+    right: 5vw;
+  }
+}
 
 .experience-thumbnail {
   width: 250px;
@@ -453,17 +484,38 @@ figcaption {
 
 .experience {
   position: relative;
-  width: 75vw;
-  height: auto;
+  box-sizing: border-box;
+  padding: 8em 12em;
   margin: 0 auto 100px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .experience {
+    padding: 4em 6em;
+  }
+
+  .experience-thumbnail {
+    width: 210px;
+    height: 140px;
+  }
+}
+
 .experience-title {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 12em;
+}
+
+@media only screen and (max-width: 830px) {
+  .experience-title {
+    left: 6em;
+    top: -1.5em;
+  }
 }
 
 .experience-tumbnail > img {
@@ -478,21 +530,29 @@ figcaption {
   height: 200px;
 }
 
+@media only screen and (max-width: 570px) {
+  .experience-row {
+    height: auto;
+  }
+}
+
 .experience-row:nth-child(odd) {
   justify-content: flex-end;
 }
 
 .scaled-img {
   position: absolute;
-  top: -125px;
-  bottom: 0;
-  left: -160px;
+  top: -2em;
+  left: 0;
   right: 0;
   z-index: 1;
-  width: 100vw;
+  width: 98vw;
+  height: 100vh;
   transform-origin: 50% 50%;
 }
 
-/* .scaled {
-  transform: scale(0.2) translateY(1000px);
-}  */
+@media only screen and (max-width: 830px) {
+  .scaled-img {
+    transform-origin: 50% 75%;
+  }
+}

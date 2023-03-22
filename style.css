@@ -123,6 +123,7 @@ html {
 }
 
 .navigation-list {
+  max-width: 70vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -132,8 +133,10 @@ html {
 .language-btn {
   width: 50px;
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000000;
-  text-align: center;
 }
 
 .popup {
@@ -267,6 +270,7 @@ html {
   .skills-list,
   .languages-list {
     flex-direction: row;
+    height: auto;
   }
 }
 
@@ -317,6 +321,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 570px) {
+  .pet-title {
+    max-width: 90%;
+  }
+}
+
 .experience-links {
   width: 50%;
   margin-top: 50px;
@@ -336,11 +346,30 @@ html {
   max-width: 45%;
 }
 
+@media only screen and (max-width: 570px) {
+  .features {
+    max-width: 99%;
+    list-style: none;
+  }
+}
+
 .figure {
   width: 600px;
   max-width: 50%;
   color: #000000;
   background: linear-gradient(to right, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+}
+
+@media only screen and (max-width: 570px) {
+  .figure {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .experience-img {
+    width: 100%;
+  }
 }
 
 figcaption {
@@ -500,6 +529,12 @@ figcaption {
   }
 }
 
+@media only screen and (max-width: 570px) {
+  .experience {
+    padding: 50px;
+  }
+}
+
 .experience-title {
   position: absolute;
   top: 0;
@@ -591,6 +626,12 @@ figcaption {
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   padding: 30px;
   transition: 0.3s all;
+}
+
+@media only screen and (max-width: 570px) {
+  .modal {
+    padding: 50px 30px;
+  }
 }
 
 .modal.active,

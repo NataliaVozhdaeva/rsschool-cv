@@ -1,22 +1,20 @@
 //experience animation
 const experience = document.querySelector('.experience');
-//const expItems = experience.querySelectorAll('.experience-item');
-//const projectBtns = experience.querySelectorAll('.experience-thumbnail');
 const projecImgs = [
-  './assets/img/plants.png',
-  './assets/img/git-search.png',
-  './assets/img/elite-fire.png',
-  './assets/img/comments-form.png',
-  './assets/img/bikes.png',
-  './assets/img/cinemaddict.png',
-  './assets/img/travel.png',
-  './assets/img/screen2.png',
-  './assets/img/design.png',
-  './assets/img/levelup.png',
-  './assets/img/watchStore.jpg',
-  './assets/img/JD.png',
-  './assets/img/beautySalon.jpg',
-  './assets/img/crm.jpg',
+  { data: 'plants', src: './assets/img/plants.png' },
+  { data: 'git-search', src: './assets/img/git-search.png' },
+  { data: 'elite-fire', src: './assets/img/elite-fire.png' },
+  { data: 'comments-form', src: './assets/img/comments-form.png' },
+  { data: 'bikes', src: './assets/img/bikes.png' },
+  { data: 'cinemaddict', src: './assets/img/cinemaddict.png' },
+  { data: 'travel', src: './assets/img/travel.png' },
+  { data: 'portfolio', src: './assets/img/screen2.png' },
+  { data: 'design', src: './assets/img/design.png' },
+  { data: 'levelup', src: './assets/img/levelup.png' },
+  { data: 'watchStore', src: './assets/img/watchStore.jpg' },
+  { data: 'JD', src: './assets/img/JD.png' },
+  { data: 'beautySalon', src: './assets/img/beautySalon.jpg' },
+  { data: 'crm', src: './assets/img/crm.jpg' },
 ];
 
 projecImgs.forEach((el, i) => {
@@ -40,15 +38,17 @@ projecImgs.forEach((el, i) => {
 
   const expBtn = document.createElement('button');
   expBtn.classList.add('experience-thumbnail');
-  expBtn.style.backgroundImage = `url(${el})`;
+  expBtn.classList.add('js-open-modal');
+  expBtn.setAttribute('data-modal', el.data);
+  expBtn.style.backgroundImage = `url(${el.src})`;
 
-  if (window.innerWidth < 830 && el == './assets/img/screen2.png') {
+  if (window.innerWidth < 830 && el.src == './assets/img/screen2.png') {
     expBtn.style.backgroundImage = `url('./assets/img/small.png')`;
-  } else if (window.innerWidth < 570 && el == './assets/img/screen2.png') {
+  } else if (window.innerWidth < 570 && el.src == './assets/img/screen2.png') {
     expBtn.style.backgroundImage = `url('./assets/img/mobile-screen.png')`;
   }
 
-  if (el == './assets/img/screen2.png') {
+  if (el.src == './assets/img/screen2.png') {
     const expBtnOver = document.createElement('img');
     expBtnOver.classList.add('scaled-img');
     if (window.innerWidth < 570) {
@@ -144,4 +144,39 @@ langBtn.addEventListener('click', () => {
   setTimeout(() => {
     popup.classList.remove('show-popup');
   }, 5000);
+});
+
+//modal window
+const modalButtons = document.querySelectorAll('.js-open-modal');
+const overlay = document.querySelector('#overlay-modal');
+const closeButtons = document.querySelectorAll('.js-modal-close');
+
+modalButtons.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    let modalId = this.getAttribute('data-modal');
+    let modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+
+    modalElem.classList.add('active');
+    overlay.classList.add('active');
+    document.querySelector('.body').classList.add('stop-acroll');
+    /* 
+    const closeButton = document.querySelector('.js-modal-close');
+    closeButton.addEventListener('click', function () {
+      let parentModal = this.closest('.modal');
+      parentModal.classList.remove('active');
+      overlay.classList.remove('active');
+      document.querySelector('.body').classList.remove('stop-scroll');
+    }); */
+  });
+});
+
+closeButtons.forEach(function (item) {
+  item.addEventListener('click', function () {
+    let parentModal = this.closest('.modal');
+    parentModal.classList.remove('active');
+    overlay.classList.remove('active');
+    document.querySelector('.body').classList.remove('stop-scroll');
+  });
 });

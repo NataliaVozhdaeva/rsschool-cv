@@ -1,6 +1,5 @@
 ## NATALIA VOZHDAEVA
 
-**Telegram:** @Natalia091827  
 **e-mail:** NataliaVVozhdaeva@gmail.com
 
 HTML, CSS, and Javascript developer with experience in OOP including Single Page Application using the MVP. Have been
